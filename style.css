@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+body > p:first-child {
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+    font-family: "Lato", sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+body > hr + p{
+    margin-top: 4vh;
+    width: 35vw;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 300;
+    text-align: center;
+    color: #646464;
+    line-height: 1.5;   
+}
+
+#photo-container {
+    margin-top: 6vh;
+    width: 73.125%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.person {
+    width: 23.4%;
+    height: 100%;
+    position: relative;
+}
+.person p {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding-top: 7%;
+    line-height: 0.9;
+    position: absolute;
+    bottom: 10%;
+}
+.person p span {
+    font-weight: 300;
+    font-size: 1vw;
+    color: #646464;
+}
+img {
+    position: absolute;
+    z-index: 1;
+}
+.otherside {
+    width: 100%;
+    height: 73%;
+    position: absolute;
+    top: 0;
+    background-color: #18b5dc;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    width: 20%;
+    height: 20%;
+    background-color: #5ecbe7;
+    margin-right: 2%;
+    text-align: center;
+    padding-top: 3%;
+}
+svg {
+    width: 70%;
+}
+img:hover {
+    transform: scaleX(-1);
+    transition-duration: .5s;
+    z-index: 0;
+}
+img:hover + div {
+    transform: scaleX(-1);
+    transition-duration: .5s;    
+}
+img:hover + div>div {
+    transform: scaleX(-1);
+    transition-duration: .5s; 
+}
